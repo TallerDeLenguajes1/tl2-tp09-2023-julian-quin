@@ -1,7 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using TP_BaseDeDatosWebApi;
 
-namespace TP_BaseDeDatosWebApi.Controllers;
+namespace tl2_tp09_2023_Julian_quin.Controllers;
 
 [ApiController]
 [Route("[controller]")]
@@ -25,26 +24,30 @@ public class UsuarioController : ControllerBase
 
     }
     [HttpPost("/api/Usuario")]
-    public ActionResult NuevoUsuario (Usuario usuario)
+    public ActionResult NuevoUsuario(Usuario usuario)
     {
         accesoRepository.NuevoUsuario(usuario);
-        return Ok();  
+        return Ok("Nuevo Recurso Creado");  
     }
     [HttpPut("/api/Usuario/{idUsuario}")]
     public ActionResult ModificarUsuario(int idUsuario, Usuario usuario)
     {
-        accesoRepository.ActualizarUsuario(usuario, idUsuario);
-        return Ok();  
+        
+        if(accesoRepository.ActualizarUsuario(usuario, idUsuario))return Ok("Recurso Actualizado");
+        return NotFound ("Recurso No Encontrado");  
     }
     [HttpGet("/api/Usuario/{idUsuario}")]
     public ActionResult UsuarioViaId(int idUsuario)
     {
-        return Ok(accesoRepository.UsuarioViaId(idUsuario));
+        var usuario = accesoRepository.UsuarioViaId(idUsuario);
+        if (usuario!=null)return Ok(usuario);
+        return NotFound("Recurso no encontrado");
+        
     }
     [HttpDelete("/api/Usuario/{idUsuario}")]
      public ActionResult EliminarUsuario(int idUsuario)
     {
-        accesoRepository.EliminarUsuario(idUsuario);
-        return Ok();
+        if(accesoRepository.EliminarUsuario(idUsuario)) return Ok("Recurso Actualizado");
+        return NotFound ("Recurso No Encontado");
     }
 }

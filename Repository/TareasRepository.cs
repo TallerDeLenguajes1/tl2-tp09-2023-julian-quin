@@ -1,6 +1,6 @@
 using System.Data.SQLite;
 
-namespace TP_BaseDeDatosWebApi;
+namespace tl2_tp09_2023_Julian_quin;
 public class TareasRepository:ITareasRepository
 {
     private string cadenaConexion = "Data Source=DB/Kanban.db;Cache=Shared";
@@ -165,11 +165,5 @@ public class TareasRepository:ITareasRepository
             command.ExecuteNonQuery();
             connection.Close();
         }
-        
-       
-
-
     }
-
-
 }

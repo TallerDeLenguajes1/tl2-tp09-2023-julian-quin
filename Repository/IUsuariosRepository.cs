@@ -1,10 +1,10 @@
-namespace TP_BaseDeDatosWebApi;
+namespace tl2_tp09_2023_Julian_quin;
 public interface IUsuarioRepository
 {
     List<Usuario> Usuarios();
     void NuevoUsuario (Usuario usuario);
-    void ActualizarUsuario(Usuario usuario, int id);
+    bool ActualizarUsuario(Usuario usuario, int id);
     Usuario UsuarioViaId(int id);
-    void EliminarUsuario(int id);
+    bool EliminarUsuario(int id);
 
 }

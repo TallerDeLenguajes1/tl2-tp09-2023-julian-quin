@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "FjfQ6XvBcVT+kiXqchj77To6T07++nrn95T0ecFoj4XTopc6iCiE/G6zrzJWlfRNvGuX7TDadscRImYKZ+IC6g==",
+  "dgSpecHash": "FLCtLhO3Gj6915Z8DeQEYmkDKP2ns6+tubfn8SWSeoJhtcHEt0AksBcFnq0w79wBDyj9BzPp0BbFCwks+rirvg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\julio\\Desktop\\TP_BaseDeDatosWebApi\\TP_BaseDeDatosWebApi.csproj",
+  "projectFilePath": "C:\\Users\\julio\\Desktop\\taller2\\TP_Realizados\\tl2-tp09-2023-julian-quin\\TP_BaseDeDatosWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\julio\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\julio\\.nuget\\packages\\microsoft.aspnetcore.openapi\\7.0.10\\microsoft.aspnetcore.openapi.7.0.10.nupkg.sha512",

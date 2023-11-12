@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace TP_BaseDeDatosWebApi.Controllers;
+namespace tl2_tp09_2023_Julian_quin.Controllers;
 
 [ApiController]
 [Route("[controller]")]

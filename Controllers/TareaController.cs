@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
-using TP_BaseDeDatosWebApi;
+using tl2_tp09_2023_Julian_quin;
 
-namespace TP_BaseDeDatosWebApi.Controllers;
+namespace tl2_tp09_2023_Julian_quin.Controllers;
 
 [ApiController]
 [Route("[controller]")]
